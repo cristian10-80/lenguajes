@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro Comparativo: React vs JSX</title>
+    <link rel="stylesheet" href="ReactJS.css">
+   
+</head>
+<body>
+   
+    <h2>Cuadro Comparativo </h2>
+
+    <table>
+        <tr>
+            <th>Caracteristicas</th>
+            <th>React</th>
+            <th>JSX</th>
+        </tr>
+        <tr>
+            <td>Definición</td>
+            <td>Biblioteca de JavaScript para construir interfaces de usuario</td>
+            <td>Extensión de JavaScript que se utiliza con React para definir la estructura de la interfaz de usuario</td>
+        </tr>
+        <tr>
+            <td>Sintaxis</td>
+            <td>Utiliza JavaScript puro y ofrece un enfoque declarativo para construir componentes</td>
+            <td>Extiende la sintaxis de JavaScript, permitiendo escribir código similar a HTML dentro de JavaScript</td>
+        </tr>
+        <tr>
+            <td>Renderización</td>
+            <td>Utiliza el método 'ReactDOM.render()' para renderizar componentes en el DOM</td>
+            <td>Permite definir elementos de interfaz de usuario de manera más legible, similar al HTML</td>
+        </tr>
+        <tr>
+            <td>Componentes</td>
+            <td>Los componentes son creados mediante clases o funciones</td>
+            <td>Puedes definir componentes usando funciones o clases y luego utilizar JSX para su renderización</td>
+        </tr>
+        <tr>
+            <td>Variables y expresiones</td>
+            <td>Puedes utilizar variables y expresiones JavaScript dentro de las etiquetas JSX</td>
+            <td>Puedes integrar directamente variables y expresiones JavaScript utilizando llaves '{}' dentro de JSX</td>
+        </tr>
+        <tr>
+            <td>Estilo y clases de CSS</td>
+            <td>Puedes aplicar estilos mediante el uso de clases y objetos de estilo</td>
+            <td>Puedes aplicar estilos directamente en línea o mediante el uso de clases de CSS</td>
+        </tr>
+        <tr>
+            <td>Atributos HTML</td>
+            <td>Se utilizan camelCase para los atributos (por ejemplo, 'className' en lugar de 'class')</td>
+            <td>Los atributos siguen la convención de nombres de HTML estándar (por ejemplo, 'class' en lugar de 'className')</td>
+        </tr>
+        <tr>
+            <td>Renderizado condicional</td>
+            <td>Puedes usar operadores ternarios o declaraciones 'if' para renderizado condicional</td>
+            <td>Puedes utilizar declaraciones 'if' directamente dentro de JSX para renderizado condicional</td>
+        </tr>
+        <tr>
+            <td>Listas y keys</td>
+            <td>Utiliza el método 'map' para renderizar listas y requiere el uso de 'key' para identificar elementos de manera única</td>
+            <td>Puedes utilizar 'map' y asignar keys directamente dentro del código JSX para renderizar listas</td>
+        </tr>
+        <tr>
+            <td>Comentarios</td>
+            <td>Los comentarios se insertan utilizando la sintaxis de JavaScript '({/* Este es un comentario */})'</td>
+            <td>Los comentarios se pueden agregar usando la sintaxis de JavaScript ({/* Este es un comentario */}) dentro de las llaves o mediante la sintaxis de HTML '({/* <!-- Este es un comentario --> */})'</td>
+        </tr>
+        <tr>
+            <td>Integración con JavaScript</td>
+            <td>React permite integrar fácilmente JavaScript en el código</td>
+            <td>JSX permite integrar JavaScript de manera más sencilla, ya que se mezcla directamente con el código HTML-like</td>
+        </tr>
+        <tr>
+            <td>Extensión de archivos</td>
+            <td>Los archivos de componentes generalmente tienen la extensión '.jsx'</td>
+            <td>Los archivos de componentes generalmente tienen la extensión '.js' cuando se utilizan con React</td>
+        </tr>
+
+        <!-- Agrega más filas según sea necesario -->
+    </table>
+
+<h2>Clases en React</h2>
+<img src="react.png" class="React" height="100" width="100">
+<p>En el contexto de React, las "clases" se refieren a las clases de JavaScript que se utilizan para definir componentes. En React, los componentes son las unidades fundamentales de una interfaz de usuario, y se crean mediante el uso de clases de JavaScript.
+
+    Estas clases de React pueden ser clases de componentes de estado (class Componente extends React.Component) o clases de componentes funcionales (function Componente() {...}). En ambos casos, estas clases encapsulan el comportamiento y la representación de un componente específico.
+    
+    En un componente de clase, puedes definir métodos, estados y ciclos de vida que controlan el comportamiento del componente. Los componentes también pueden tener propiedades que se utilizan para pasar datos de un componente padre a un componente hijo.
+    
+    En resumen, en React, las clases son un concepto clave para la creación y definición de componentes, que son bloques de construcción fundamentales en las aplicaciones React. Estas clases permiten estructurar y organizar la lógica y la presentación de una aplicación de manera más modular. Sin embargo, es importante mencionar que con la introducción de los "Hooks" en React, como useState y useEffect, los componentes funcionales también pueden tener estado y ciclos de vida, eliminando la necesidad de clases en algunos casos.
+    </p>
+
+<h2>Eventos en React</h2>
+
+<p>En React, los principales eventos son eventos del DOM que puedes utilizar para manejar interacciones del usuario. A continuación, se mencionan algunos de los eventos más comunes en React sin proporcionar código específico:
+
+    <h3>onClick:</h3>
+        Se dispara cuando se hace clic en un elemento.
+        Útil para manejar acciones como botones o enlaces que deben responder al clic del usuario.
+
+    <h3>onChange:</h3>
+        Se dispara cuando el valor de un elemento de formulario cambia.
+        Muy útil para manejar la entrada del usuario en formularios.
+
+    <h3>onSubmit:</h3>
+        Se dispara cuando se envía un formulario.
+        Se utiliza para manejar la lógica asociada con la presentación de formularios.
+
+    <h3>onMouseOver y onMouseOut:</h3>
+        onMouseOver se dispara cuando el puntero del mouse entra en un elemento.
+        onMouseOut se dispara cuando el puntero del mouse sale de un elemento.
+        Pueden ser utilizados para mostrar o esconder información adicional.
+
+    <h3>onKeyDown, onKeyPress, y onKeyUp:</h3>
+        onKeyDown se dispara cuando una tecla se presiona.
+        onKeyPress se dispara cuando se presiona una tecla y se mantiene presionada.
+        onKeyUp se dispara cuando una tecla se libera.
+        Estos eventos son útiles para manejar la entrada del teclado.
+
+    <h3>onFocus y onBlur:</h3>
+        onFocus se dispara cuando un elemento recibe el foco.
+        onBlur se dispara cuando un elemento pierde el foco.
+        Pueden ser utilizados para realizar acciones cuando un usuario interactúa con un elemento.
+
+    <h3>onLoad y onError:</h3>
+        onLoad se dispara cuando un recurso, como una imagen, ha terminado de cargar.
+        onError se dispara cuando hay un error al cargar un recurso.
+        Útiles para manejar la carga de recursos externos.
+
+    <h3>onScroll:</h3>
+        Se dispara cuando un elemento se desplaza.
+        Puede ser utilizado para implementar lógica basada en el desplazamiento de un componente.</p>
+
+<h2>Mapa conceptual</h2>
+<p>https://drive.google.com/file/d/11Ej8NIDAficKvbCymnXqFp-rjXNGzfhn/view?pli=1</p>
+<img src="MapaConceptual.png" class="MapaConceptual">
+
+<footer>
+    <p>&copy; 2023 Enciclopedia de Lenguajes de Programación</p>
+</footer>
+
+</body>
+</html>
